@@ -139,9 +139,15 @@ def confirm():
             os.chdir(source_dir+'/Resource/')
             res['name']=names
             # asking file name for checkpoint file
-            fn = input('please enter keypoint file name [ex :- file.csv] : ')
-            res.to_csv(fn,index=False)
-            print('\n>>>>>>>>>> file saved in FACE-KEYPOINT-EXTRACTOR\Resource\\',fn)
+            while True:
+                fn = input('please enter keypoint file name [ex :- any_name] : ')
+                try:
+                    res.to_csv(fn+'.csv',index=False)
+                    break
+                except:
+                    print('invalid file name')
+                    continue
+            print('\n>>>>>>>>>> file saved in FACE-KEYPOINT-EXTRACTOR\Resource\\',fn+'.csv')
             # making mask image of coordinates
             resx = res.iloc[:,list(range(0,30,2))].values.round().astype(int)
             resy = res.iloc[:,list(range(1,30,2))].values.round().astype(int)
