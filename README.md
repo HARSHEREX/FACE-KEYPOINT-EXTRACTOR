@@ -5,7 +5,7 @@ a complex tool to solve facial project challenges and useful for anyone who want
 	* program will ask you to retrain model 
 
 # model performance :
-	yellow is validation and blue is training
+	orange is validation and blue is training
  - ![alt text](
 https://github.com/HARSHEREX/FACE-KEYPOINT-EXTRACTOR/blob/main/Resource/model/performance%20graph.jpg?raw=true)
 
