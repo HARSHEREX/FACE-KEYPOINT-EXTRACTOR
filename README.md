@@ -1,6 +1,8 @@
 # FACE-KEYPOINT-EXTRACTOR
 a complex tool to solve facial project challenges and useful for anyone who want to get face key points for any king of facial project (face recognition / expression recognition)
 
+## user must train the model again because model size is 200MB + so it can not be uploaded to github
+	* program will ask you to retrain model 
 
 # model performance :
 	yellow is validation and blue is training
