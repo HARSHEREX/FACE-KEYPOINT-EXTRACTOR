@@ -138,7 +138,7 @@ def confirm():
             # saving file dir
             os.chdir(source_dir+'/Resource/')
             res['name']=names
-            # asking file name for checkpoint file
+            # asking file name for key point file
             while True:
                 fn = input('please enter keypoint file name [ex :- any_name] : ')
                 try:
